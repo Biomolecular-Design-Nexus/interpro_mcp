@@ -1,0 +1,47 @@
+{
+  "sequences": {
+    "P53_HUMAN": {
+      "domains": [
+        "P53"
+      ],
+      "families": [
+        "P53"
+      ],
+      "go_terms": [
+        "GO:0030330",
+        "GO:0003677",
+        "GO:0003700",
+        "GO:0006915",
+        "GO:0046982"
+      ]
+    },
+    "INSULIN_HUMAN": {
+      "domains": [
+        "Insulin"
+      ],
+      "families": [],
+      "go_terms": [
+        "GO:0042593",
+        "GO:0016020",
+        "GO:0005179"
+      ]
+    }
+  },
+  "domains": [
+    "P53",
+    "Insulin"
+  ],
+  "families": [
+    "P53"
+  ],
+  "go_terms": [
+    "GO:0042593",
+    "GO:0030330",
+    "GO:0003677",
+    "GO:0003700",
+    "GO:0006915",
+    "GO:0016020",
+    "GO:0046982",
+    "GO:0005179"
+  ]
+}

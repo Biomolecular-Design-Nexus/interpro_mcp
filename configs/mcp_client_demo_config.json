@@ -1,0 +1,63 @@
+{
+  "_description": "Configuration for MCP client demonstration and server communication",
+  "_source": "Extracted from examples/use_case_3_mcp_client_example_patched.py",
+
+  "connection": {
+    "server_url": "stdio://interpro-mcp-server",
+    "protocol_version": "2024-11-05",
+    "connection_timeout": 30,
+    "max_retry_attempts": 3
+  },
+
+  "servers": {
+    "basic": {
+      "name": "InterPro MCP Server (basic)",
+      "version": "1.0.0",
+      "tool_count": 2,
+      "capabilities": {
+        "async_jobs": false,
+        "result_parsing": true,
+        "batch_processing": false
+      }
+    },
+    "queue": {
+      "name": "InterPro MCP Server (queue)",
+      "version": "1.0.0",
+      "tool_count": 5,
+      "capabilities": {
+        "async_jobs": true,
+        "result_parsing": true,
+        "batch_processing": true,
+        "job_management": true
+      }
+    }
+  },
+
+  "demonstration": {
+    "auto_discover_tools": true,
+    "analyze_schemas": true,
+    "test_tool_calls": true,
+    "save_results": true,
+    "include_metadata": true
+  },
+
+  "mock_mode": {
+    "enabled": true,
+    "connection_delay": 1,
+    "tool_execution_delay": 1,
+    "realistic_responses": true,
+    "sample_data": {
+      "job_ids": ["mock_job_12345", "mock_job_67890"],
+      "processing_times": ["1.2s", "15m 32s"],
+      "result_sizes": ["2.3 MB", "850 KB"]
+    }
+  },
+
+  "output": {
+    "save_discovery_results": true,
+    "save_tool_responses": true,
+    "include_timing": true,
+    "format": "json",
+    "pretty_print": true
+  }
+}

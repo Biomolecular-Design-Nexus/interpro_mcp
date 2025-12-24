@@ -1,0 +1,11 @@
+# InterProScan version 5.59-91.0
+# What is InterProScan? InterProScan is a sequence analysis application (nucleotide and protein sequences) that combines different protein signature recognition methods from the InterPro database.
+# Version 5.59-91.0
+# Analysis Date: 2025-12-21
+
+# Sequence	MD5 checksum	Sequence length	Analysis	Signature accession	Signature description	Start location	Stop location	Score	Status	Date	InterPro accession	InterPro description	GO annotations	Pathways
+P53_HUMAN	abc123def456	393	Pfam	PF00870	P53	1	292	1.2E-23	T	21-12-2025	IPR011615	P53 DNA-binding domain	GO:0003677|DNA binding,GO:0003700|DNA-binding transcription factor activity	REACTOME:R-HSA-69473
+P53_HUMAN	abc123def456	393	PRINTS	PR00659	P53	10	45	-	T	21-12-2025	IPR002117	P53 tumor suppressor	GO:0006915|apoptotic process,GO:0030330|DNA damage response	-
+P53_HUMAN	abc123def456	393	ProSiteProfiles	PS50963	P53_TETRAMER	325	355	8.234	T	21-12-2025	IPR010991	P53 tetramerisation motif	GO:0046982|protein heterodimerization activity	-
+INSULIN_HUMAN	def789ghi012	110	Pfam	PF00049	Insulin	25	110	2.1E-15	T	21-12-2025	IPR022353	Insulin	GO:0005179|hormone activity,GO:0042593|glucose homeostasis	REACTOME:R-HSA-264876
+INSULIN_HUMAN	def789ghi012	110	SUPERFAMILY	SSF57447	Insulin-like	30	105	1.5E-12	T	21-12-2025	IPR022353	Insulin	GO:0016020|membrane	KEGG:map04910

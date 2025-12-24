@@ -1,0 +1,46 @@
+{
+  "_description": "Configuration for protein domain scanning using InterProScan",
+  "_source": "Extracted from examples/use_case_1_basic_protein_scan_patched.py",
+
+  "interpro": {
+    "path": "interproscan.sh",
+    "timeout": 1800,
+    "max_file_size": 50000000
+  },
+
+  "analysis": {
+    "output_format": "tsv",
+    "include_goterms": true,
+    "include_pathways": true,
+    "databases": null
+  },
+
+  "output": {
+    "save_raw_tsv": true,
+    "save_parsed_json": true,
+    "include_statistics": true,
+    "include_metadata": true
+  },
+
+  "mock_mode": {
+    "enabled": true,
+    "processing_delay": 1,
+    "realistic_results": true,
+    "sample_sequences": [
+      {
+        "id": "P53_HUMAN",
+        "description": "Tumor suppressor p53",
+        "domains": ["P53", "P53_TETRAMER"],
+        "families": ["P53"],
+        "go_terms": ["GO:0003677", "GO:0003700", "GO:0006915"]
+      },
+      {
+        "id": "INSULIN_HUMAN",
+        "description": "Insulin",
+        "domains": ["Insulin"],
+        "families": [],
+        "go_terms": ["GO:0005179", "GO:0042593", "GO:0016020"]
+      }
+    ]
+  }
+}

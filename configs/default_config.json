@@ -1,0 +1,61 @@
+{
+  "_description": "Default configuration shared across all InterPro MCP scripts",
+  "_version": "1.0.0",
+  "_updated": "2025-12-21",
+
+  "common": {
+    "mock_mode": true,
+    "verbose": true,
+    "save_logs": true,
+    "log_level": "INFO"
+  },
+
+  "interpro": {
+    "path": "interproscan.sh",
+    "timeout": 1800,
+    "max_file_size": 50000000,
+    "temp_dir": "/tmp/interpro",
+    "output_formats": ["tsv", "xml", "json", "gff3"],
+    "databases": [
+      "Pfam", "PRINTS", "ProSiteProfiles", "SUPERFAMILY",
+      "SMART", "GENE3D", "PANTHER", "PIRSF", "CDD"
+    ]
+  },
+
+  "paths": {
+    "examples_data": "examples/data",
+    "results": "results",
+    "configs": "configs",
+    "scripts": "scripts",
+    "temp": "temp"
+  },
+
+  "file_formats": {
+    "input": {
+      "fasta": {
+        "extensions": [".fasta", ".fa", ".fas"],
+        "max_size": "50MB",
+        "max_sequences": 10000
+      }
+    },
+    "output": {
+      "tsv": {
+        "extension": ".tsv",
+        "delimiter": "\t",
+        "include_headers": true
+      },
+      "json": {
+        "extension": ".json",
+        "pretty_print": true,
+        "indent": 2
+      }
+    }
+  },
+
+  "performance": {
+    "max_concurrent_jobs": 5,
+    "job_check_interval": 30,
+    "retry_attempts": 3,
+    "connection_timeout": 30
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "_description": "Configuration for async InterPro job submission and management",
+  "_source": "Extracted from examples/use_case_2_async_job_submission_patched.py",
+
+  "queue": {
+    "url": "http://localhost:8000",
+    "connection_timeout": 30,
+    "max_retry_attempts": 3
+  },
+
+  "jobs": {
+    "default_priority": 5,
+    "min_priority": 1,
+    "max_priority": 10,
+    "default_timeout": 1800,
+    "state_file": "results/job_state.json"
+  },
+
+  "analysis": {
+    "output_format": "tsv",
+    "include_goterms": true,
+    "include_pathways": true,
+    "databases": null
+  },
+
+  "estimation": {
+    "time_per_kb": 1,
+    "min_time_minutes": 1,
+    "max_time_minutes": 60,
+    "queue_delay_minutes": 1,
+    "running_phase_minutes": 3
+  },
+
+  "notifications": {
+    "email_enabled": true,
+    "email_on_completion": true,
+    "email_on_error": true
+  },
+
+  "mock_mode": {
+    "enabled": true,
+    "realistic_timing": true,
+    "job_progression": {
+      "queue_duration": 1,
+      "running_duration": 2,
+      "auto_complete": true
+    },
+    "sample_results": {
+      "sequence_count": 3,
+      "domain_types": ["Pfam", "PRINTS", "SUPERFAMILY"],
+      "include_metadata": true
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"""Tools package for bio-mcp-interpro MCP server."""
