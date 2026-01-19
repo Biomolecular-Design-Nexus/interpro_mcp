@@ -59,14 +59,25 @@ The bio-mcp-interpro MCP server provides access to InterProScan protein domain a
 
 ## Installation
 
+### Quick Setup (Recommended)
+
+Run the automated setup script:
+
+```bash
+cd interpro_mcp
+bash quick_setup.sh
+```
+
+The script will create the conda environment, install all dependencies, and display the Claude Code configuration. See `quick_setup.sh --help` for options like `--skip-env`.
+
 ### Prerequisites
 - Conda or Mamba (mamba recommended for faster installation)
 - Python 3.10+
 - InterProScan (optional - mock mode works without it)
 
-### Create Environment
+### Manual Installation (Alternative)
 
-Please strictly follow the information in `reports/step3_environment.md` to obtain the procedure to setup the environment. An example workflow is shown below.
+If you prefer manual installation or need to customize the setup, follow `reports/step3_environment.md`:
 
 ```bash
 # Navigate to the MCP directory
